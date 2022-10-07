@@ -173,3 +173,33 @@ text-align: center;
     padding-bottom:200px; 
     text-align: center;
 }
+.post::before{
+    background-image:url(../images/post.svg);
+    margin-right: 16px;
+    background-repeat: no-repeat;
+
+}
+.number::before{
+    margin-right: 16px;
+    background-image: url(../images/number.svg);
+    background-repeat: no-repeat;
+  }
+  
+.post , .number {
+    display: inline-flex;
+    align-items: center;
+    color: currentColor;
+    text-decoration: none;
+    background-repeat: no-repeat;
+  }
+  
+  .post::before,
+  .post::after ,.number::before,
+  .number::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+  }
+
+
